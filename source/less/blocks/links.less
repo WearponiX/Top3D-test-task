@@ -1,0 +1,78 @@
+.links {
+  display: flex;
+  padding: 0 227px 0 106px;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.links__header {
+  width: 100%;
+  margin: 70px 0 0;
+  font-family: SF Pro Display;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 29px;
+  position: relative;
+
+}
+
+.links__header::after {
+  content: "";
+  position: absolute;
+  top: 13px;
+  right: -120px;
+  display: block;
+  width: 916px;
+  height: 1px;
+  background: #E5E5E5;
+}
+
+.links__link {
+  margin: 48px 0 65px;
+  color: @black;
+  text-decoration: none;
+  border-bottom: 1px solid @black;
+  position: relative;
+  font-family: SF Pro Display;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+
+
+}
+
+.links__link::after {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 5px;
+  right: -22px;
+  width: 10px;
+  height: 8px;
+  background: url("../img/tick.svg") no-repeat;
+  transform: rotate(270deg);
+}
+
+.links__link--red {
+  color: @red;
+  border-bottom: 1px solid @red;
+}
+
+.links__link--red::after {
+  background: url("../img/tick--red.svg") no-repeat;
+}
+
+
+@media (max-width: @tablet-width) {
+  .links {
+    padding: 0;
+  }
+}
+
+.links__header::after {
+  display: none;
+}
+
+.links__link::after {
+  display: none;
+}

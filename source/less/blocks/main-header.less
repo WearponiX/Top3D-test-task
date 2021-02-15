@@ -1,0 +1,117 @@
+.main-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  min-height: 137px;
+  margin: 5px 0 0;
+  padding: 0 120px;
+  border-bottom: 1px solid #BDBDBD;
+  color: @black;
+  font-family: "Open Sans", "sans-serif";
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 18px;
+}
+.main-header__logo{
+  margin: 2px 0 0;
+}
+.main-header__quote {
+  margin: 0 15px 0;
+  padding: 0;
+  text-align: start;
+  font-style: italic;
+}
+
+.quote__3d {
+  color: @red;
+}
+
+.main-header__yandex-market {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 105px;
+  height: 60px;
+  margin: 5px 10px 0 20px;
+  padding: 0;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.16);
+}
+
+.main-header__search {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 0 0 20px;
+  width: 520px;
+  border: 1px solid #BDBDBD;
+  border-radius: 4px;
+  font-family: Open Sans;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 18px;
+  text-align: center;
+}
+
+.search__field {
+  margin: 0;
+  padding: 0 0 0 15px;
+  width: 100%;
+  outline: none;
+  border: none;
+  color: @black;
+  font-family: "Open Sans", "sans-serif";
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.search__btn {
+  margin: 4px;
+  padding: 6px 13px;
+  border: 2px solid @red;
+  border-radius: 4px;
+  color: @red;
+  text-decoration: none;
+}
+
+.main-header__login {
+  margin: 0 0 0 20px;
+  padding: 5px 5px 5px 40px;
+  background: url("../img/main-header__login.svg") 8px 3px no-repeat;
+  background-size: 26px 22px;
+  color: @black;
+  text-decoration: none;
+}
+
+.main-header__cart {
+  margin: 0 0 0 25px;
+  padding: 10px 10px 10px 50px;
+  border-radius: 4px;
+  background: @red url("../img/main-header__cart.svg") 17px 9px no-repeat;
+  background-size: 26px 22px;
+  color: @white;
+  text-decoration: none;
+}
+
+.nav {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0 5px 15px;
+}
+
+.nav__link {
+  color: @black;
+  text-decoration: none;
+}
+
+@media (max-width: @tablet-width) {
+  .main-header {
+    padding: 0;
+  }
+}

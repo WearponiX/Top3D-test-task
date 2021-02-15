@@ -1,0 +1,73 @@
+.intro {
+  display: flex;
+  padding: 0 106px;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+}
+.intro__group-photo{
+  width: 100%;
+}
+.intro__text {
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.intro__header {
+  margin: 50px 0 0;
+  padding: 0;
+  max-width: 333px;
+  color: @black;
+  font-family: SF Pro Display;
+  font-size: 27px;
+  font-weight: 400;
+  line-height: 32px;
+}
+
+.intro__resume {
+  margin: 40px 0 0;
+  padding: 13px 73px;
+  background: @red;
+  border-radius: 4px;
+  text-decoration: none;
+  color: @white;
+  font-family: SF Pro Display;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+  text-align: center;
+}
+
+.intro__personal-data {
+  width: 230px;
+  margin: 20px 0 0;
+  padding: 0;
+  font-family: SF Pro Display;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 17px;
+  color: #C4C4C4;
+}
+
+.intro__about-us {
+  margin: 50px 0 0 auto;
+  max-width: 708px;
+  color: #4D4D4D;
+  font-family: SF Pro Display;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+}
+
+.intro__about-us--3d-print-awards{
+  color: @red;
+  text-decoration: underline;
+
+}
+
+@media (max-width: @tablet-width) {
+  .intro {
+    padding: 0;
+  }
+}
